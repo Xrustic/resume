@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="ru">
 
+<style>
+  .modern-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: sans-serif;
+  }
+
+  .modern-table th, 
+  .modern-table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+  }
+
+  .modern-table th {
+    background-color: #f8f8f8;
+    text-align: left;
+  }
+</style>
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,40 +27,122 @@
     </head>
 
     <body>
-        <h1>Ольга Сесюнина</h1>
-        <h2>Junior Python-разработчик</h2>
-        <h2>Контакты</h2>
-        <hr>
+        <header>
+            <img src="./photo/xrustic123.jpg" style="float: right; margin-right: 100px;" width="200" height="200">
+            <h1>Ольга Сесюнина</h1>
+            <h2>Junior Python-разработчик</h2>
+        </header>
 
-        <h4>Почта</h4>
-        <a href="mailto:olga.sesyunina7@yandex.ru">olga.sesyunina7@yandex.ru</a>
-        <h4>Телефон</h4>
-        <a href="+79531630528">+79531630528</a>
-        <h4>GitHub</h4>
-        <a href="https://github.com/Xrustic">https://github.com/Xrustic</a>
-        <h4>Телеграм</h4>
-        <a href="https://t.me/Xrustic_72">Ольга</a>
-        <h4>Дополнительные контакты</h4>
-        <a href="https://career.habr.com/xrustic700">https://career.habr.com/xrustic700</a>
+        <main>
+            <h2 style="clear: both;">Контакты</h2>
+            <hr>
 
-        <h2>Описание</h2>
-        <hr>
-        <p>
-            Обладаю базовыми знаниями языка программирования Python.<br>
-            Работаю с базами данных, классами, Django, Flask, HTML, SQL (PostgreSQL). Знакома с алгоритмами и структурой
-            данных (списки, словари, кортежи, рекурсия) и знаю как работать с Git.
-        </p>
+            <table border="1" class="modern-table">
+                <thead>
+                    <tr>
+                        <th>Почта</th>
+                        <th>Телефон</th>
+                        <th>GitHub</th>
+                        <th>Телеграм</th>
+                        <th>Дополнительные контакты</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="mailto:olga.sesyunina7@yandex.ru">olga.sesyunina7@yandex.ru</a>
+                        </td>
+                        <td>
+                            <a href="+79531630528">+79531630528</a>
+                        </td>
+                        <td>
+                            <a href="https://github.com/Xrustic">https://github.com/Xrustic</a>
+                        </td>
+                        <td>
+                            <a href="https://t.me/Xrustic_72">Ольга</a>
+                        </td>
+                        <td>
+                            <a href="https://career.habr.com/xrustic700">https://career.habr.com/xrustic700</a>
+                        </td>
+                    </tr>
+                </tbody>
+                </table>
 
-        <h2>Навыки</h2>
-        <hr>
-        <p>
-            Английский язык: уровень A2-B1.<br>
-            Django, Flask, HTML, SQL (PostgreSQL).<br>
-            VScode и Ubuntu<br>
-            Git
-        </p>
+            <!-- <h4>Почта</h4>
+                <a href="mailto:olga.sesyunina7@yandex.ru">olga.sesyunina7@yandex.ru</a>
+            <h4>Телефон</h4>
+                <a href="+79531630528">+79531630528</a>
+            <h4>GitHub</h4>
+                <a href="https://github.com/Xrustic">https://github.com/Xrustic</a>
+            <h4>Телеграм</h4>
+                <a href="https://t.me/Xrustic_72">Ольга</a>
+            <h4>Дополнительные контакты</h4>
+                <a href="https://career.habr.com/xrustic700">https://career.habr.com/xrustic700</a> -->
 
-        <h2>Описание проектов</h2>
+            <h2>Описание</h2>
+            <hr>
+            <p>
+                Обладаю базовыми знаниями языка программирования Python.<br>
+                Работаю с базами данных, классами, Django, Flask, HTML, SQL (PostgreSQL). Знакома с алгоритмами и структурой
+                данных (списки, словари, кортежи, рекурсия) и знаю как работать с Git.
+            </p>
+
+            <h2>Навыки</h2>
+            <hr>
+            <p>
+                Английский язык: уровень A2-B1.<br>
+                Django, Flask, HTML, SQL (PostgreSQL).<br>
+                VScode и Ubuntu<br>
+                Git
+            </p>
+
+            <h2>Описание проектов</h2>
+            <hr>
+
+            <table border="1" class="modern-table">
+                <tr>
+                    <th style="text-align: left;">Первый проект, который был завершен - 
+                        <a href="https://github.com/Xrustic/brain_games">Игры разума.</a>
+                    </th>
+                    <td>
+                        Описание: В проекте стояла задача реализовать математические игры. Благодаря этому проекту я научилась
+                        пользоваться аскинемами.<br>
+                        Стек: Pyhton, asciinema, poetry.
+                    </td>
+                </tr>
+                <tr>
+                    <th style="text-align: left;">Второй проект - 
+                        <a href="https://github.com/Xrustic/gendiff">Вычислитель отличий.</a>
+                    </th>
+                    <td>
+                        Описание: В проекте я сравниваю несколько файлов между собой и вывожу их результат. Научилась работать с
+                        тестами.<br>
+                        Стек: Pyhton, asciinema, tests, poetry.
+                    </td>
+                </tr>
+                <tr>
+                    <th style="text-align: left;">Третий проект - 
+                        <a href="https://github.com/Xrustic/python-project-83">Анализатор страниц.</a>
+                    </th>
+                    <td>
+                        Описание: В проекте нужно было создать сайт, который проверяет работоспособность сайта, ссылку которого вы
+                        ввели в строке ввода адреса сайта. Научилась работать с Классами и Базами Данных.<br>
+                        Стек: Pyhton, class, HTML, PostgreSQL, poetry.
+                    </td>
+                </tr>
+                <tr>
+                    <th style="text-align: left;">Четвертый проект - 
+                        <a href="https://github.com/Xrustic/python-project-52">Менеджер задач.</a>
+                    </th>
+                    <td>
+                        Описание: В проекте нужно было сделать копию сайта примера, с выполнением его функционала. В этом проекте
+                        углубилась в изучение Баз Данных, так же работала с Тестами и HTML.<br>
+                        Стек: Pyhton, class, HTML, PostgreSQL, poetry, tests, DB, translate.
+                    </td>
+                </tr>
+            </table>
+
+        <!-- <h2>Описание проектов</h2>
         <hr>
         <p>
             Первый проект, который был завершен - 
@@ -70,29 +171,32 @@
             Описание: В проекте нужно было сделать копию сайта примера, с выполнением его функционала. В этом проекте
             углубилась в изучение Баз Данных, так же работала с Тестами и HTML.<br>
             Стек: Pyhton, class, HTML, PostgreSQL, poetry, tests, DB, translate.
-        </p>
+        </p> -->
 
-        <h2>Образование</h2>
-        <hr>
-        <p>
-            Python-разработчик, Hexlet<br>
-            Сентябрь 2023 - Март 2025
-        </p>
+            <h2>Образование</h2>
+            <hr>
+            <p>
+                Python-разработчик, Hexlet<br>
+                Сентябрь 2023 - Март 2025
+            </p>
 
-        <h2>О себе</h2>
-        <hr>
-        <p>
-            Не готов релоцироваться<br>
-            Санкт-Петербург<br>
-            Изучаю Английский язык.<br>
-            Прошла обучение по профессии "Python-разработчик" в школе программирования Хекслет. Реализовала четыре
-            учебных проекта.<br>
-            В будущем хотела бы погрузиться в разработку компьютерных игр.
-        </p>
+            <h2>О себе</h2>
+            <hr>
+            <p>
+                Не готов релоцироваться<br>
+                Санкт-Петербург<br>
+                Изучаю Английский язык.<br>
+                Прошла обучение по профессии "Python-разработчик" в школе программирования Хекслет. Реализовала четыре
+                учебных проекта.<br>
+                В будущем хотела бы погрузиться в разработку компьютерных игр.
+            </p>
+        </main>
 
-        <hr>
-        <p>Файл резюме для примера: 
-            <a href="hexlet-cv-resume.pdf" target="_blank">Открыть PDF файл</a>
-        </p>
+        <footer>
+            <hr>
+            <p>Файл резюме для примера: 
+                <a href="hexlet-cv-resume.pdf" target="_blank">Открыть PDF файл</a>
+            </p>
+        </footer>
     </body>
 </html>
